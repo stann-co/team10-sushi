@@ -1,7 +1,7 @@
 :root {
     --color-bg: #2B3841;
     /* bg betyder background*/
-    --header-bg: linear-gradient(90deg, #485A66 0%, #2B3841 100%);
+    --color-header-bg: linear-gradient(90deg, #485A66 0%, #2B3841 100%);
     --color-h1: linear-gradient(90deg, #60D577 0%, #49A15A 100%);
     --color-h2: #56AD67;
     --color-dinkurv-bg: linear-gradient(90deg, #60D577 0%, #49A15A 100%);
