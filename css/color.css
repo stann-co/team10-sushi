@@ -1,0 +1,10 @@
+root {
+    --color-bg: #2B3841;
+
+
+    --color-h1: linear-gradient(90deg, #60D577 0%, #49A15A 100%);
+    --color-cta2-bg: #56AD67;
+    --color-text: #FEFDFD;
+
+    --color-menubutton-bg: linear-gradient(90deg, #D2722B 0%, #AC5F26 100%);
+}
