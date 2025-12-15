@@ -1,20 +1,20 @@
 body {
-    background-color: var(--color-bg);
+  background-color: var(--color-bg);
 }
 
 header {
-    background-color: var(--color-header-bg);
+  background-color: var(--color-header-bg);
 }
 
 h1,
 h2 {
-    font-family: "Japan ramen";
+  font-family: "Japan ramen";
 }
 
 h1 {
-    color: var(--color-text-gradient);
+  color: var(--color-text-gradient);
 }
 
 h2 {
-    color: var(--color-h2);
+  color: var(--color-h2);
 }
