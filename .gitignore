@@ -60,3 +60,4 @@ docker-compose.*.yml
 .DS_Store?
 *.swp
 *~
+img/logo.svg
