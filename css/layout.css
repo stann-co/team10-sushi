@@ -1,0 +1,85 @@
+/* Kode for scroll menuen på bestil*/
+.menu-scroll {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: nowrap;
+
+    /* Enable horizontal scrolling */
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    /*touch scrolling på iOS */
+    -webkit-overflow-scrolling: touch;
+    padding: 1rem;
+    background-color: var(--color-cta1-bg);
+}
+
+/* Prevent items from shrinking */
+.menu-scroll a {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Optional: hide scrollbar but keep scroll */
+.menu-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-scroll {
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* Layout For Forside.html */
+.grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* to kolonner */
+    gap: 20px;
+    /* mellemrum mellem tekst og billede */
+    margin: 10px 0;
+    /* luft mellem sektionerne */
+    align-items: center;
+    /* centrer tekst og billeder lodret */
+    order: -1;
+    /* tekst først på mindre skærme */
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+/* Layout For OmOs.html */
+.box01 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.box02 {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.box03 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.box04 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}

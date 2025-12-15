@@ -6,15 +6,160 @@ header {
   background-color: var(--color-header-bg);
 }
 
+h1 {
+  font-family: "Japan ramen";
+  font-size: clamp(2.6rem, 6vw, 5.5rem);
+  text-align: center;
+  margin: 10px 0;
+  background: linear-gradient(90deg, #60d577 0%, #49a15a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 h1,
 h2 {
   font-family: "Japan ramen";
-}
-
-h1 {
-  color: var(--color-text-gradient);
+  text-align: center;
 }
 
 h2 {
   color: var(--color-h2);
+  font-size: clamp(1.8rem, 6vw, 3rem);
+}
+
+p {
+  color: var(--color-text);
+  font-size: clamp(0.5rem, 6vw, 1.1rem);
+}
+
+a {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  align-items: center;
+}
+
+/* Logo */
+.logo-text,
+h1 {
+  font-family: "Japan ramen";
+}
+
+/* Hero Section */
+.hero {
+  height: 60vh; /* hvor høj hero skal være */
+  background-image: url("../Billeder/img1.webp"); /* vælge hero image */
+  background-size: cover; /* gør billedet fullscreen */
+  background-position: center; /* holder fokus i midten */
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; /* tekst farven ovenpå billedet */
+}
+
+/* Hero headline */
+.hero h1 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fefdfd;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 32, 40, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.opening-hours {
+  background-color: var(--color-bg);
+  color: #fefdfd;
+  padding: 40px 20px;
+}
+
+.opening-hours h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#hours-list {
+  list-style: none;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#hours-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* marker i dag */
+#hours-list li.today {
+  color: var(--color-accent-green);
+  font-weight: bold;
+}
+
+/* Google Maps Pinpoint */
+.location {
+  background-color: var(--color-bg);
+  color: #fefdfd;
+  padding: 40px 20px;
+}
+
+.location h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.location-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.address {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.address h3 {
+  margin-bottom: 10px;
+  color: var(--color-accent-green);
+}
+
+.map iframe {
+  width: 100%;
+  height: 250px;
+  border: 0;
+  border-radius: 10px;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .location-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
 }
