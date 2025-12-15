@@ -8,7 +8,7 @@ header {
 
 h1 {
   font-family: "Japan ramen";
-  font-size: 5.2rem;
+  font-size: clamp(2.6rem, 6vw, 5.5rem);
   text-align: center;
   margin: 10px 0;
   background: linear-gradient(90deg, #60d577 0%, #49a15a 100%);
@@ -20,15 +20,27 @@ h1 {
 h1,
 h2 {
   font-family: "Japan ramen";
+  text-align: center;
 }
 
 h2 {
   color: var(--color-h2);
+  font-size: clamp(1.8rem, 6vw, 3rem);
+}
+
+p {
+  color: var(--color-text);
+  font-size: clamp(0.5rem, 6vw, 1.1rem);
+}
+
+a {
+  list-style: none;
 }
 
 img {
   max-width: 100%;
   display: block;
+  align-items: center;
 }
 
 /* Logo */
@@ -73,24 +85,6 @@ h1 {
 .hero-content {
   position: relative;
   z-index: 1;
-  text-align: center;
-}
-
-/* Section headings */
-h2 {
-  font-family: "Noto Sans JP", sans-serif;
-  color: var(--color-h2);
-}
-
-/* Layout For Forside.html */
-.grid_1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* to kolonner */
-  gap: 20px; /* mellemrum mellem tekst og billede */
-  margin: 10px 0; /* luft mellem sektionerne */
-  align-items: center; /* centrer tekst og billeder lodret */
-  order: -1; /* tekst først på mindre skærme */
-  /* border: 1px solid black; */
   text-align: center;
 }
 
