@@ -9,6 +9,8 @@
   display: block;
   cursor: pointer;
   transition: 0.3s;
+  color: #fefdfd;
+  text-decoration: none;
 }
 .knap:hover {
   background-color: #60d577;
@@ -58,9 +60,9 @@ nav {
 }
 
 .menu a {
-  display: block;
-  padding: 10px;
-  color: #fefdfd;
+  background: var(--color-menubutton-bg);
+  color: var(--color-text);
+  border-radius: 20px;
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
