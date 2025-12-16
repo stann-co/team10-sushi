@@ -1,12 +1,22 @@
 :root {
-    --color-bg: #2B3841;
     /* bg betyder background*/
-    --color-header-bg: linear-gradient(90deg, #485A66 0%, #2B3841 100%);
-    --color-h1: linear-gradient(90deg, #60D577 0%, #49A15A 100%);
-    --color-h2: #56AD67;
-    --color-dinkurv-bg: linear-gradient(90deg, #60D577 0%, #49A15A 100%);
+    --color-bg: #2B3841;
+    --color-bg-dark: #1F2930;
+    --color-header-bg: linear-gradient(#2B3841 0%,#485A66 100%);
+
+    --color-gradient-green: linear-gradient( #60D577 0%, #49A15A 100%);
+    --color-gradient-orange: linear-gradient( #D2722B 0%, #AC5F26 100%);
+    --color-green:#359000;
+    --color-orange:#AC5F26;
+
+    --color-hero-overlay: linear-gradient( 90deg, #AC5F26 0%,#D2722B00 100%);;
+
+    --box-shadow: 0 4px 4px #00000033;
+    --drop-shadow: drop-shadow(0 4px 4px #00000033);
+    --box-shadow-hover: 0 6px 8px #00000065;
+    --drop-shadow-hover: drop-shadow(0 6px 8px #00000065);
+
     --color-text: #FEFDFD;
-    --color-menubutton-bg: linear-gradient(90deg, #D2722B 0%, #AC5F26 100%);
     --color-cta1-bg: #D9D9D9;
     --color-cta1-hover: #343434;
     --color-cta1-clicked: #FF6767;
