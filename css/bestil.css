@@ -132,7 +132,7 @@ main {
 .card {
     flex: 0 0 auto;
     width: 200px;
-    height: 265px;
+    height: auto;
     background: #fff;
     border-radius: 12px;
     padding: 1rem;
@@ -152,7 +152,6 @@ main {
 }
 
 .card button {
-    margin: 0.75rem 5px;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 999px;
