@@ -25,7 +25,7 @@ header {
   .Logo {
     a {
       display: flex;
-      
+
       img {
         width: 60px;
         height: 60px;
@@ -39,7 +39,7 @@ header {
     .logo-text {
       background: var(--color-gradient-green);
       -webkit-background-clip: text;
-              background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
 
       text-decoration: none; /* no underline */
@@ -53,7 +53,7 @@ header {
     display: flex;
     align-items: center;
   }
-  
+
   .menu {
     display: flex;
     list-style: none;
@@ -67,7 +67,7 @@ header {
         margin-right: 0;
       }
 
-/*       a {
+      /*       a {
         background: var(--color-menubutton-bg);
         color: var(--color-text);
         border-radius: 20px;
@@ -103,13 +103,15 @@ header {
     background-image: var(--color-gradient-green);
   }
 
-  &:hover {  
+  &:hover {
     transform: scale(1.05);
     box-shadow: var(--box-shadow-hover);
   }
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   filter: var(--drop-shadow);
   -webkit-filter: var(--drop-shadow);
   background: var(--color-gradient-green);
@@ -124,7 +126,6 @@ h1 {
   font-family: "Japan ramen";
   font-size: clamp(2.6rem, 6vw, 5.5rem);
   text-align: center;
-
 }
 
 h2 {
@@ -188,22 +189,19 @@ img {
   height: 100%;
   display: flex;
   flex-direction: column;
-  
 
-  p{
+  p {
     font-size: 24px;
     filter: var(--drop-shadow);
     -webkit-filter: var(--drop-shadow);
   }
 
-  .hero-tlf{
+  .hero-tlf {
     margin-top: auto;
     font-size: 64px;
     font-weight: bold;
   }
 }
-
-
 
 .opening-hours {
   background-color: var(--color-bg);
@@ -295,86 +293,102 @@ img {
 
 /* Kode for scroll menuen på bestil*/
 .menu-scroll {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: nowrap;
 
-    /* Enable horizontal scrolling */
-    overflow-x: auto;
-    overflow-y: hidden;
+  /* Enable horizontal scrolling */
+  overflow-x: auto;
+  overflow-y: hidden;
 
-    /*touch scrolling på iOS */
-    -webkit-overflow-scrolling: touch;
-    padding: 1rem;
-    background-color: var(--color-cta1-bg);
+  /*touch scrolling på iOS */
+  -webkit-overflow-scrolling: touch;
+  padding: 1rem;
+  background-color: var(--color-cta1-bg);
 
-    scrollbar-width: none;
-    /* Firefox */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 /* Prevent items from shrinking */
 .menu-scroll a {
-    flex: 0 0 auto;
-    white-space: nowrap;
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
 }
 
 /* Optional: hide scrollbar but keep scroll */
 .menu-scroll::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /* Layout For Forside.html */
 .grid_1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* to kolonner */
-    gap: 20px;
-    /* mellemrum mellem tekst og billede */
-    margin: 10px 0;
-    /* luft mellem sektionerne */
-    align-items: center;
-    /* centrer tekst og billeder lodret */
-    order: -1;
-    /* tekst først på mindre skærme */
-    /* border: 1px solid black; */
-    text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* to kolonner */
+  gap: 20px;
+  /* mellemrum mellem tekst og billede */
+  margin: 10px 0;
+  /* luft mellem sektionerne */
+  align-items: center;
+  /* centrer tekst og billeder lodret */
+  order: -1;
+  /* tekst først på mindre skærme */
+  /* border: 1px solid black; */
+  text-align: center;
 }
 
 /* Layout For OmOs.html */
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* to kolonner */
+  gap: 20px;
+  /* mellemrum mellem tekst og billede */
+  margin: 10px 0;
+  /* luft mellem sektionerne */
+  align-items: center;
+  /* centrer tekst og billeder lodret */
+  order: -1;
+  /* tekst først på mindre skærme */
+  /* border: 1px solid black; */
+  text-align: center;
+}
+
 .box01 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .box02 {
-    grid-column: 2 / 4;
-    grid-row: 1 / 2;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .box03 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .box04 {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 @media screen and (width < 800px) {
