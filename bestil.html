@@ -2,88 +2,836 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bestil</title>
     <link rel="stylesheet" href="./css/color.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/bestil.css">
+    <link rel="stylesheet" href="/css/menu.css">
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <div class="Logo">
+            <a href="/">
+                <img src="img/logo.svg" alt="Logo" />
+                <span class="logo-text">May'C Restaurant</span>
+            </a>
+        </div>
+        <nav>
+            <strong>
+                <ul class="menu">
+                    <li><a href="forside.html" class="knap">Forside</a></li>
+                    <li><a href="bookbord.html" class="knap">Book Bord</a></li>
+                    <li><a href="bestil.html" class="knap">Afhentning</a></li>
+                    <li><a href="omos.html" class="knap">Om Os</a></li>
+                    <li><a href="kassen.html" class="knap">Din Kurv</a></li>
+                </ul>
+            </strong>
+            <button class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+    </header>
 
     <main>
         <nav class="menu-scroll">
-            <a href="#" class="active">Menu</a>
-            <a href="#">Foretter</a>
-            <a href="#">Sticks</a>
-            <a href="#">Sushi</a>
-            <a href="#">Rispapir og Poke bowl</a>
-            <a href="#">Hovedretter</a>
-            <a href="#">Drikkevarer</a>
-            <a href="#">Tilbehør</a>
+            <a href="#Menuer" class="active scroll-link">Menuer</a>
+            <a href="#Foretter" class="scroll-link">Foretter</a>
+            <a href="#Sticks" class="scroll-link">Sticks</a>
+            <a href="#maki" id="sushiBtn" class="scroll-link">Sushi</a>
+            <a href="#Rispapir" class="scroll-link">Rispapir og Poke bowl</a>
+            <a href="#Hovedretter" class="scroll-link">Hovedretter</a>
+            <a href="#Drikkevarer" class="scroll-link">Drikkevarer</a>
+            <a href="#Tilbehør" class="scroll-link">Tilbehør</a>
+        </nav>
+        <nav class="menu-scroll">
+            <div id="sushiSubmenu">
+                <a href="#maki" class="scroll-link">Maki</a>
+                <a href="#nigiri" class="scroll-link">Nigiri</a>
+                <a href="#uramaki" class="scroll-link">Uramaki</a>
+                <a href="#tempura" class="scroll-link">Tempura</a>
+                <a href="#ikkefisk" class="scroll-link">Ikke fisk</a>
+            </div>
         </nav>
 
 
-        <div id="Nigiri">
-            <h2>Nigiri</h2>
-            <button id="toggleView" class="toggle-btn">Expand</button>
-            <section class="card-nav collapsed" id="cardNav">
+
+        <div id="Menuer" class="menu-section">
+            <h2 class="bestilheader">Menuer</h2>
+            <button class="toggle-btn">Expand</button>
+
+            <section class="card-nav collapsed">
                 <div class="card">
-                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
-                    <h3>Item One</h3>
-                    <button>View</button>
+                    <img src="./Billeder/Menu/Crispy-Menu.webp" alt="">
+                    <h3>Crispy-Menu</h3>
+                    <button>Tilføj</button>
                 </div>
 
                 <div class="card">
-                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
-                    <h3>Item Two</h3>
-                    <button>View</button>
+                    <img src="./Billeder/Menu/Deluxe-Menu.webp" alt="">
+                    <h3>Deluxe-Menu</h3>
+                    <button>Tilføj</button>
                 </div>
 
                 <div class="card">
-                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
-                    <h3>Item Three</h3>
-                    <button>View</button>
+                    <img src="./Billeder/Menu/Ebi-Menu.webp" alt="">
+                    <h3>Ebi-Menu</h3>
+                    <button>Tilføj</button>
                 </div>
 
                 <div class="card">
-                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
-                    <h3>Item Four</h3>
-                    <button>View</button>
+                    <img src="./Billeder/Menu/Gourmet-Menu.webp" alt="">
+                    <h3>Gourmet-Menu</h3>
+                    <button>Tilføj</button>
                 </div>
 
                 <div class="card">
-                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
-                    <h3>Item Four</h3>
-                    <button>View</button>
+                    <img src="./Billeder/Menu/Hot-Menu.webp" alt="">
+                    <h3>Hot-Menu</h3>
+                    <button>Tilføj</button>
                 </div>
 
                 <div class="card">
-                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
-                    <h3>Item Four</h3>
-                    <button>View</button>
+                    <img src="./Billeder/Menu/Nigiri-Menu.webp" alt="">
+                    <h3>Nigiri-Menu</h3>
+                    <button>Tilføj</button>
                 </div>
 
                 <div class="card">
-                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
-                    <h3>Item Four</h3>
-                    <button>View</button>
+                    <img src="./Billeder/Menu/Party-Menu.webp" alt="">
+                    <h3>Party-Menu</h3>
+                    <button>Tilføj</button>
                 </div>
 
                 <div class="card">
-                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
-                    <h3>Item Four</h3>
-                    <button>View</button>
+                    <img src="./Billeder/Menu/Royal-Menu.webp" alt="">
+                    <h3>Royal-Menu</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Menu/Simple-Menu.webp" alt="">
+                    <h3>Simple-Menu</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Menu/Speciel-Menu.webp" alt="">
+                    <h3>Speciel-Menu</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Menu/Tempura-Menu.webp" alt="">
+                    <h3>Tempura-Menu</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Menu/Yakisoba-Menu.webp" alt="">
+                    <h3>Yakisoba-Menu</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Menu/Vegetar-Menu.webp" alt="">
+                    <h3>Vegetar-Menu</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Menu/Vegan-Menu.webp" alt="">
+                    <h3>Vegan-Menu</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Menu/Kids-Menu1.webp" alt="">
+                    <h3>Kids-Menu1</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Menu/Kids-Menu2.webp" alt="">
+                    <h3>Kids-Menu2</h3>
+                    <button>Tilføj</button>
                 </div>
             </section>
         </div>
 
 
-        <form action=""></form> <!--Lav form til bookbord og bestil på menu-->
+        <div id="Foretter" class="menu-section">
+            <h2 class="bestilheader">Foretter</h2>
+            <button class="toggle-btn">Expand</button>
+
+            <section class="card-nav collapsed">
+                <div class="card">
+                    <img src="./Billeder/Forretter/Crispy-Ris-Lakstatar.webp" alt="">
+                    <h3>Crispy Ris Lakstatar</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Forretter/Crispy-Ris-Tuntatar.webp" alt="">
+                    <h3>Crispy Ris Tuntatar</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Forretter/Edamame.webp" alt="">
+                    <h3>Edamame</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Forretter/Foraarsruller.webp" alt="">
+                    <h3>Forårsruller</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Forretter/Wontons.webp" alt="">
+                    <h3>Wontons</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Forretter/Goma-Wakame.webp" alt="">
+                    <h3>Goma Wakame</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Forretter/Kakiage.webp" alt="">
+                    <h3>Kakiage</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Forretter/Kushi-Shrimp.webp" alt="">
+                    <h3>Kushi Shrimp</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Forretter/Kylling-Gyoza.webp" alt="">
+                    <h3>Kylling Gyoza</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Forretter/Laks-Tempura.webp" alt="">
+                    <h3>Laks Tempura</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Forretter/Sashimi-Laks.webp" alt="">
+                    <h3>Sashimi Laks</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Forretter/Sproed-Salat.webp" alt="">
+                    <h3>Sprød Salat</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Forretter/Sushi-Taco-Laks.webp" alt="">
+                    <h3>Sushi Taco Laks</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Forretter/Sushi-Taco-Rejer.webp" alt="">
+                    <h3>Sushi Taco Rejer</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Forretter/Vegetar-Springrolls.webp" alt="">
+                    <h3>Vegetar Springrolls</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Forretter/Vegetarian-Gyoza.webp" alt="">
+                    <h3>Vegetarian Gyoza</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Forretter/Wonton-Soup_result.webp" alt="">
+                    <h3>Wonton Soup</h3>
+                    <button>Tilføj</button>
+                </div>
+            </section>
+        </div>
+
+
+        <div id="Sticks" class="menu-section">
+            <h2 class="bestilheader">Sticks</h2>
+            <button class="toggle-btn">Expand</button>
+
+            <section class="card-nav collapsed">
+                <div class="card">
+                    <img src="./Billeder/Sticks/Chicken-Cheddar.webp" alt="">
+                    <h3>Chicken Cheddar</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sticks/Chicken-Chilli.webp" alt="">
+                    <h3>Chicken Chilli</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sticks/Chicken-Karaage.webp" alt="">
+                    <h3>Chicken Karaage</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sticks/Chickenwings.webp" alt="">
+                    <h3>Chickenwings</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sticks/Kylling-Koedboller.webp" alt="">
+                    <h3>Kylling Koedboller</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sticks/Yaki-Beef-Sticks.webp" alt="">
+                    <h3>Yaki Beef Sticks</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sticks/Yakitori.webp" alt="">
+                    <h3>Yakitori</h3>
+                    <button>Tilføj</button>
+                </div>
+            </section>
+        </div>
+
+
+        <div id="maki" class="menu-section">
+            <h2 class="bestilheader">Maki-Rolls</h2>
+            <button class="toggle-btn">Expand</button>
+
+            <section class="card-nav collapsed">
+                <div class="card">
+                    <img src="./Billeder/Sushi/Tun.webp" alt="">
+                    <h3>Item One</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Two</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Three</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+            </section>
+        </div>
+
+        <div id="nigiri" class="menu-section">
+            <h2 class="bestilheader">Nigiri</h2>
+            <button class="toggle-btn">Expand</button>
+
+            <section class="card-nav collapsed">
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item One</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Two</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Three</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+        </div>
+        </section>
+        </div>
+
+        <div id="uramaki" class="menu-section">
+            <h2 class="bestilheader">Uramaki</h2>
+            <button class="toggle-btn">Expand</button>
+
+            <section class="card-nav collapsed">
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item One</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Two</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Three</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+        </div>
+        </section>
+        </div>
+
+        <div id="tempura" class="menu-section">
+            <h2 class="bestilheader">Tempura</h2>
+            <button class="toggle-btn">Expand</button>
+
+            <section class="card-nav collapsed">
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Crispy Kylling</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Salmon.webp" alt="">
+                    <h3>Crispy Salmon</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Futo-Crispy-Ebi.webp" alt="">
+                    <h3>Futo Crispy Ebi</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Fire-Dragon.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Flamming-Fish.webp" alt="">
+                    <h3>Flamming Fish</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+            </section>
+        </div>
+
+        <div id="ikkefisk" class="menu-section">
+            <h2 class="bestilheader">Ikke fisk ruller</h2>
+            <button class="toggle-btn">Expand</button>
+
+            <section class="card-nav collapsed">
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item One</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Two</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Three</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+            </section>
+        </div>
+
+
+        <div id="Rispapir" class="menu-section">
+            <h2 class="bestilheader">Risk og Poke bowl</h2>
+            <button id="toggleView" class="toggle-btn">Expand</button>
+
+            <section class="card-nav collapsed" id="cardNav">
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item One</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Two</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Three</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+            </section>
+        </div>
+
+
+        <div id="Hovedretter" class="menu-section">
+            <h2 class="bestilheader">Hovedretter</h2>
+            <button class="toggle-btn">Expand</button>
+
+            <section class="card-nav collapsed">
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item One</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Two</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Three</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+            </section>
+        </div>
+
+
+        <div id="Drikkevarer" class="menu-section">
+            <h2 class="bestilheader">Drikkevarer</h2>
+            <button class="toggle-btn">Expand</button>
+
+            <section class="card-nav collapsed">
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item One</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Two</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Three</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+            </section>
+        </div>
+
+        <div id="Tilbehør" class="menu-section">
+            <h2 class="bestilheader">Tilbehør</h2>
+            <button class="toggle-btn">Expand</button>
+
+            <section class="card-nav collapsed">
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item One</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Two</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Three</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+
+                <div class="card">
+                    <img src="./Billeder/Sushi/Crispy-Kylling.webp" alt="">
+                    <h3>Item Four</h3>
+                    <button>Tilføj</button>
+                </div>
+            </section>
+        </div>
+
+
+
+        <form action=""></form> <!--Lav form til bookbord-->
+
+        <!-- <button class="topbutton" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Back to Top</button> -->
+
         <footer></footer>
     </main>
     <script src="js/login.js"></script>
