@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let total = 0;
 
     if (cart.length === 0) {
-      cartItemsEl.innerHTML = '<p>Din kurv er tom</p>';
+      cartItemsEl.innerHTML = '<p>Din kurv er tom</p>'; //virker dog ikke
     }
 
     cart.forEach(item => {
